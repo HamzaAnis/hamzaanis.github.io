@@ -3,7 +3,9 @@ GEM
   specs:
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    backports (3.11.0)
     colorator (1.1.0)
+    ffi (1.9.18)
     ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.5.1)
@@ -17,6 +19,11 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-admin (0.7.0)
+      addressable (~> 2.4)
+      jekyll (~> 3.3)
+      sinatra (~> 1.4)
+      sinatra-contrib (~> 1.4)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
@@ -31,9 +38,15 @@ GEM
     mercenary (0.3.6)
     minima (2.1.1)
       jekyll (~> 3.3)
+    multi_json (1.13.1)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
+    rack (1.6.8)
+    rack-protection (1.5.3)
+      rack
+    rack-test (0.8.2)
+      rack (>= 1.0, < 3)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -44,20 +57,34 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-contrib (1.4.7)
+      backports (>= 2.0)
+      multi_json
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (>= 1.3, < 3)
     thread_safe (0.3.6)
+    tilt (2.0.8)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     tzinfo-data (1.2017.2)
       tzinfo (>= 1.0.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
   jekyll (= 3.5.1)
+  jekyll-admin
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
   tzinfo-data
 
 BUNDLED WITH
-   1.15.3
+   1.16.1
