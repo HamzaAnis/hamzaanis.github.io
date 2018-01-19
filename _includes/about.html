@@ -1,0 +1,19 @@
+{% if site.about.showMe %}
+<section>
+  <div id="about">
+    <ul>
+      <li>
+        <strong>Tweets</strong> rational and irrational things on Twitter as <a href="http://www.twitter.com/{{site.twitter_username}}">@{{site.twitter_username}}</a>.
+      </li>
+      <li>
+        <strong>Shares</strong> opinion and random stuff on Facebook as <a href="http://www.facebook.com/{{site.facebook.username}}">{{site.facebook.name}}</a>.
+      </li>
+      <li>
+        <strong>Writes</strong> but mostly reads answers on Quora as <a href="{{site.quora.url1}}">{{site.quora.name}}.</a>
+      </li>
+      <li><strong>Codes</strong> for community on Github as <a href="http://www.github.com/{{site.github_username}}">{{site.github_username}}</a>. </li>
+      <li><strong>Competes</strong> for programming challenges at <a href="{{site.hackerrank.profile_url}}">{{site.hackerrank.username}}</a> on <a href="{{site.hackerrank.url}}">hackerrank</a>.</li>
+    </ul>
+  </div>
+</section>
+{% endif %}
