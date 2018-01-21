@@ -5,6 +5,7 @@
 layout: home
 ---
 <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
  <script>
     $.ajax({
       type: "GET",
