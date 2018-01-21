@@ -43,7 +43,7 @@ stack:
 github:
   user: hamzaanis
   repo_count: 62
-  show_profile_link: true
+  show_profile_link: false
 
 about:
   showMe: true
