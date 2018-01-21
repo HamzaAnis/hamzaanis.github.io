@@ -4,6 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
  <script>
     $.ajax({
       type: "GET",
@@ -23,5 +24,6 @@ layout: home
         }
       }
     });
+
 </script>
 {% include github.html %}        
