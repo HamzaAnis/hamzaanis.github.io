@@ -1,7 +1,7 @@
 ---
+title: Khush Haal Kisan
 layout: post
-title: KisanApp
-permalink: /extras/kisanapp
+permalink: "/extras/kisanapp"
 ---
 
 # Under Development
